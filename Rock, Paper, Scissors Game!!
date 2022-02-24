@@ -1,0 +1,20 @@
+print("Let's begain the Rock, Paper and scissors!")
+first_player = input("Enter the name of first player??")
+second_player = input("Enter the name of second player??")
+options = ["Rock", "Paper","Scissors"]
+person_1 = input("Enter about your option %r?"% first_player)
+person_2 = input("What about your option %r?" % second_player)
+if person_1 == person_2:
+    print("Draw")
+elif person_1 == "Rock" and person_2 == "Scissors": 
+    print("%r lose the game!" % second_player)
+elif person_1 == "Scissors" and person_2 == "Paper":
+    print("%r lose the game!"% second_player)
+elif person_1 == "Paper" and person_2 == "Rock":
+    print("%r lose the game!" % second_player)
+elif person_1 == "Scissors" and person_2 == "Rock":
+    print("%r lose the game!" %first_player)
+elif person_1 == "Paper" and person_2 ==  "Scissors":
+     print("%r lose tha game!" %first_player)
+elif person_1 == "Rock" and person_2 == "Paper":
+     print("%r lose the game!" %first_player)
